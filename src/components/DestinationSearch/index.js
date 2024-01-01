@@ -2,7 +2,7 @@
 import {Component} from 'react'
 import './index.css'
 
-import DestinationItem from './components/DestinationItem'
+import DestinationItem from './components/DestinationItem/index'
 
 class DestinationSearch extends Component {
   state = {searchInput: '', destinationsList: destinationsList}
@@ -31,8 +31,7 @@ class DestinationSearch extends Component {
           {searchResults.map(eachItem => (
             <DestinationItem ItemDetails={eachItem} key={eachItem.id} />
           ))}
-        </ul>{' '}
-        start
+        </ul>
       </div>
     )
   }
